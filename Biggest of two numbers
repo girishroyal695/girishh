@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class biggest{
+	int a,b;
+	public:
+		void input();
+		void display();
+};
+void biggest::input(){
+	cout<<"enter the first number:";
+	cin>>a;
+	cout<<"enter the second number:";
+	cin>>b;
+}
+void biggest::display(){
+	if(a>b){
+		cout<<"a is biggest";
+	}
+	else{
+		cout<<"b is biggest";
+	}
+}
+int main(){
+	biggest x;
+	x.input();
+	x.display();
+	return 0;
+}
