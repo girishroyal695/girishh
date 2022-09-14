@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+class addamount{
+	string name;
+	int amt;
+	public:
+		addamount();
+		addamount(int);
+		void display();
+};
+addamount::addamount(){
+	amt=50;
+}
+addamount::addamount(int x){
+	amt=x;
+}
+void addamount::display(){
+}
