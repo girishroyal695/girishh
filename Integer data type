@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+class print{
+	int n1;
+	char *a;
+	float n2;
+	double n3;
+	long int n4;
+	public:
+		print(int);
+		print(char *);
+		print(float);
+		print(double);
+		print(long int);
+};
+print::print(int x){
+	n1=x;
+	cout<<"integer:"<<n1<<endl;
+}
+print::print(char *y){
+	a=y;
+	cout<<"character is:"<<a<<endl;
+}
+print::print(float z){
+	n2=z;
+	cout<<"float is:"<<n2<<endl;
+}
+print::print(double e){
+	n3=e;
+	cout<<"double is:"<<n3<<endl;
+	}
+print::print(long int b){
+	n4=b;
+	cout<<"long integer:"<<n4<<endl;
+}
+int main(){
+	print d1(50),d2("surya"),d3(4.675),d4(12.893492),d5(748292);
+	return 0;
+}
