@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class program{
+
+	string x;
+	public:
+		program();
+		program(string);
+		void display();
+};
+void program::display(){
+	cout<<"i love programming"<<endl;
+	cout<<"i love "+x;
+}
+
+program::program(string x){
+	x="cpp";
+	
+}
+int main(){
+	program p;
+	p.display();
+	return 0;
+}
